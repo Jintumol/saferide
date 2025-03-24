@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "695914530311",
+    "project_id": "saferide-6a1d3",
+    "storage_bucket": "saferide-6a1d3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695914530311:android:ba67340d47a780d1858ca2",
+        "android_client_info": {
+          "package_name": "com.alen_858.react_native"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-IxhMUJN0DzuJ2gbeVZq1u7nJT9ZopCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
