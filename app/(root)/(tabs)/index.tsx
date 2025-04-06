@@ -113,7 +113,7 @@ const openModal = async () => {
     
     try {
       // Replace with your actual Vercel hosted endpoint
-      const response = await axios.post('https://app-mailer.vercel.app/send-alert', {
+      const response = await axios.post('https://mail-api-one.vercel.app/send-alert', {
         username: user?.name || 'Rider',
         emails: emails, // Sending the emails array directly
         latitude: latitude,

@@ -44,17 +44,18 @@ const Support = ({ user, location }) => {
 
         try {
             // Replace with your actual Vercel hosted endpoint
-            const response = await axios.post('https://app-mailer.vercel.app/send-alert', {
-                username: name || user?.name || 'Rider',
-                emails: [email], // Using the email from the form
-                latitude: latitude,
-                longitude: longitude
+            const response = await axios.post('https://mail-api-one.vercel.app/send-support', {
+
+                name: name,
+                email: email,
+                phoneNumber: phone,
+                problemDescription: description,
             });
 
             // Show success feedback to user
             Alert.alert(
-                "Alert Sent",
-                "Emergency services have been notified of your location.",
+                "Feedback Sent",
+                "Thank you for your valuable feedback!",
                 [{ text: "OK" }]
             );
         } catch (error) {
@@ -62,8 +63,8 @@ const Support = ({ user, location }) => {
 
             // Show error message to user
             Alert.alert(
-                "Failed to Send Alert",
-                "Please try again or call emergency services directly.",
+                "Failed to Send Feedback",
+                "Please try again.",
                 [{ text: "OK" }]
             );
         } finally {
